@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/master.swiftdeps"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanController/Controllers/AppCoordinator.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator.dia"
+  }
+}

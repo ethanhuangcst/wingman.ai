@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createPool } from 'mysql2/promise';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import path from 'path';
+import { db } from '../../lib/database';
 
 // Load environment variables
 dotenv.config({ path: path.resolve(process.cwd(), '.env') });
@@ -90,68 +90,52 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create database connection pool
-    const pool = createPool({
-      host: 'localhost',
-      port: 3306,
-      user: 'root',
-      password: 'password',
-      database: 'wingman_db',
-    });
+    // Check if user exists
+    const users = await db.execute(
+      'SELECT id FROM users WHERE id = ?',
+      [userId]
+    );
 
-    const connection = await pool.getConnection();
-
-    try {
-      // Check if user exists
-      const [users] = await connection.execute(
-        'SELECT id FROM users WHERE id = ?',
-        [userId]
-      );
-
-      if (!Array.isArray(users) || users.length === 0) {
-        return NextResponse.json(
-          {
-            success: false,
-            error: 'User not found',
-            timestamp: new Date().toISOString()
-          },
-          { status: 404 }
-        );
-      }
-
-      // Hash the new password
-      const hashedPassword = await bcrypt.hash(newPassword, 10);
-
-      // Update user password
-      const [result] = await connection.execute(
-        'UPDATE users SET password = ? WHERE id = ?',
-        [hashedPassword, userId]
-      );
-
-      // Check if update was successful
-      if (!('affectedRows' in result) || result.affectedRows === 0) {
-        return NextResponse.json(
-          {
-            success: false,
-            error: 'Failed to update password',
-            timestamp: new Date().toISOString()
-          },
-          { status: 500 }
-        );
-      }
-
+    if (!Array.isArray(users) || users.length === 0) {
       return NextResponse.json(
         {
-          success: true,
-          message: 'Password changed successfully',
+          success: false,
+          error: 'User not found',
           timestamp: new Date().toISOString()
         },
-        { status: 200 }
+        { status: 404 }
       );
-    } finally {
-      connection.release();
-      await pool.end();
     }
+
+    // Hash the new password
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    // Update user password
+    const result = await db.execute(
+      'UPDATE users SET password = ? WHERE id = ?',
+      [hashedPassword, userId]
+    );
+
+    // Check if update was successful
+    if (!Array.isArray(result) || result.length === 0 || !('affectedRows' in result[0]) || result[0].affectedRows === 0) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: 'Failed to update password',
+          timestamp: new Date().toISOString()
+        },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json(
+      {
+        success: true,
+        message: 'Password changed successfully',
+        timestamp: new Date().toISOString()
+      },
+      { status: 200 }
+    );
   } catch (error) {
     console.error('Change password error:', error);
     

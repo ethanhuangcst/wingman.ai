@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import pool from '../../lib/db';
-import { verifyToken } from '../account/route';
-import { getDefaultProvider as getDefaultProviderFromDb } from '../../lib/db';
+import { AI_API_CONNECTION } from './../utils/ai-connection/ai-connection-service';
+import { verifyToken } from './../account/route';
+import { getDefaultProvider } from '../../lib/db';
+import db from '../../lib/database';
 
 // Helper function to get user ID from token
-function getUserIdFromRequest(request: NextRequest): number | null {
+function getUserIdFromRequest(request: NextRequest) {
   // First try to get token from authorization header
   const authHeader = request.headers.get('authorization');
   if (authHeader && authHeader.startsWith('Bearer ')) {
@@ -27,233 +28,104 @@ function getUserIdFromRequest(request: NextRequest): number | null {
   return null;
 }
 
-// Helper function to get default provider
-async function getDefaultProvider(): Promise<string> {
+async function getAIResponse(messages: Array<{role: 'user' | 'assistant', content: string}>, provider: string, apiKey: string): Promise<string> {
   try {
-    const defaultProvider = await getDefaultProviderFromDb();
-    return defaultProvider?.id || 'qwen-plus';
+    // Use AI_API_CONNECTION to get response
+    const result = await AI_API_CONNECTION.connectToAI(provider, apiKey, messages);
+
+    if (result.success && result.response) {
+      return result.response;
+    } else {
+      console.error('AI API call failed:', result.error);
+      throw new Error(result.error || 'Failed to get response from AI provider');
+    }
   } catch (error) {
-    console.error('Error getting default provider:', error);
-    return 'qwen-plus';
+    console.error('Error calling AI API:', error);
+    throw error;
   }
 }
 
-export async function GET(request: NextRequest) {
-  try {
-    // Get user ID from authentication
-    const userId = getUserIdFromRequest(request);
-    if (!userId) {
-      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
-    }
-    
-    // Get all chats for the user, ordered by timestamp (most recent first)
-    const [chats] = await pool.execute(
-      'SELECT id, name, timestamp FROM chats WHERE user_id = ? ORDER BY timestamp DESC',
-      [userId]
-    );
-    
-    // Get default provider once for all messages
-    const defaultProvider = await getDefaultProvider();
-    
-    // For each chat, get its messages
-    const chatsWithMessages = await Promise.all(
-      (chats as any[]).map(async (chat) => {
-        try {
-          // Try to select with provider column
-          const [messages] = await pool.execute(
-            'SELECT id, content, role, provider, timestamp FROM chat_messages WHERE chat_id = ? ORDER BY timestamp ASC',
-            [chat.id]
-          );
-          
-          return {
-            id: chat.id,
-            name: chat.name,
-            timestamp: chat.timestamp.toISOString(),
-            messages: (messages as any[]).map((msg) => ({
-              id: msg.id,
-              content: msg.content,
-              role: msg.role,
-              provider: msg.provider || defaultProvider,
-              timestamp: msg.timestamp.toISOString()
-            }))
-          };
-        } catch (error) {
-          // If provider column doesn't exist, select without it
-          const [messages] = await pool.execute(
-            'SELECT id, content, role, timestamp FROM chat_messages WHERE chat_id = ? ORDER BY timestamp ASC',
-            [chat.id]
-          );
-          
-          return {
-            id: chat.id,
-            name: chat.name,
-            timestamp: chat.timestamp.toISOString(),
-            messages: (messages as any[]).map((msg) => ({
-              id: msg.id,
-              content: msg.content,
-              role: msg.role,
-              provider: defaultProvider, // Default provider
-              timestamp: msg.timestamp.toISOString()
-            }))
-          };
-        }
-      })
+async function getUserAPIInfo(userId: number, selectedProvider?: string): Promise<{ apiProvider: string; apiKey: string }> {
+  // Get AI connections from ai_connections table
+  let query = 'SELECT apiKey, apiProvider FROM ai_connections WHERE user_id = ?';
+  let params: any[] = [userId];
+  
+  if (selectedProvider) {
+    // Get connection for the selected provider
+    query += ' AND apiProvider = ?';
+    params.push(selectedProvider);
+  } else {
+    // Get first connection if no provider selected
+    query += ' ORDER BY id ASC LIMIT 1';
+  }
+  
+  const connections = await db.execute(query, params);
 
-    );
-    
-    console.log('Retrieving chat history from database');
-    console.log(`Found ${chatsWithMessages.length} chats`);
-    
-    return NextResponse.json({ chats: chatsWithMessages }, { status: 200 });
-  } catch (error) {
-    console.error('Error loading chat history from database:', error);
-    return NextResponse.json({ error: 'Failed to load chat history' }, { status: 500 });
+  if (Array.isArray(connections) && connections.length > 0) {
+    const connectionData = connections[0] as {
+      apiKey: string;
+      apiProvider: string;
+    };
+
+    return {
+      apiProvider: connectionData.apiProvider || 'qwen-plus',
+      apiKey: connectionData.apiKey || ''
+    };
+  } else {
+    // No AI connections found
+    throw new Error('No AI connections found for this user');
   }
 }
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    
-    // Get user ID from authentication
+    const { messages, provider } = await request.json();
+
+    if (!messages || !Array.isArray(messages) || messages.length === 0) {
+      return NextResponse.json(
+        { error: 'Messages array is required' },
+        { status: 400 }
+      );
+    }
+
+    // Get user info from token to retrieve provider and API key
     const userId = getUserIdFromRequest(request);
     if (!userId) {
-      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
+      return NextResponse.json(
+        { error: 'Authorization required' },
+        { status: 401 }
+      );
     }
-    
-    if (body.action === 'create') {
-      // Create new chat
-      const chatId = `chat-${Date.now()}`;
-      const chatName = body.name || 'New Chat';
-      const timestamp = new Date().toISOString().slice(0, 19).replace('T', ' ');
-      
-      // Insert chat into database
-      await pool.execute(
-        'INSERT INTO chats (id, user_id, name, timestamp) VALUES (?, ?, ?, ?)',
-        [chatId, userId, chatName, timestamp]
+
+    // Get user API information directly from database
+    const { apiProvider, apiKey } = await getUserAPIInfo(userId, provider);
+
+    // Validate API key
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: 'API key is required. Please set up your AI connections in account settings.' },
+        { status: 400 }
       );
-      
-      const newChat = {
-        id: chatId,
-        name: chatName,
-        timestamp: timestamp,
-        messages: []
-      };
-      
-      console.log('Creating new chat:', newChat.name);
-      console.log('Saving new chat to database');
-      
-      return NextResponse.json({ chat: newChat }, { status: 201 });
-    } else if (body.action === 'rename') {
-      // Rename chat
-      const [result] = await pool.execute(
-        'UPDATE chats SET name = ? WHERE id = ? AND user_id = ?',
-        [body.name, body.id, userId]
-      );
-      
-      if ((result as any).affectedRows === 0) {
-        return NextResponse.json({ error: 'Chat not found' }, { status: 404 });
-      }
-      
-      // Get updated chat
-      const [updatedChats] = await pool.execute(
-        'SELECT id, name, timestamp FROM chats WHERE id = ?',
-        [body.id]
-      );
-      
-      const updatedChat = (updatedChats as any)[0];
-      
-      console.log('Renaming chat to:', body.name);
-      console.log('Saving updated chat name to database');
-      
-      return NextResponse.json({ 
-        chat: {
-          id: updatedChat.id,
-          name: updatedChat.name,
-          timestamp: updatedChat.timestamp.toISOString(),
-          messages: [] // Messages will be loaded separately if needed
-        } 
-      }, { status: 200 });
-    } else if (body.action === 'delete') {
-      // Delete chat (messages will be deleted automatically via cascade)
-      const [result] = await pool.execute(
-        'DELETE FROM chats WHERE id = ? AND user_id = ?',
-        [body.id, userId]
-      );
-      
-      if ((result as any).affectedRows === 0) {
-        return NextResponse.json({ error: 'Chat not found' }, { status: 404 });
-      }
-      
-      console.log('Deleting chat from database');
-      
-      return NextResponse.json({ success: true }, { status: 200 });
-    } else if (body.action === 'addMessage') {
-      // Create new message
-      const messageId = `msg-${Date.now()}`;
-      const timestamp = new Date().toISOString().slice(0, 19).replace('T', ' ');
-      
-      try {
-        // Try to insert with provider column
-        await pool.execute(
-          'INSERT INTO chat_messages (id, chat_id, content, role, provider, timestamp) VALUES (?, ?, ?, ?, ?, ?)',
-          [messageId, body.chatId, body.content, body.role, body.provider || await getDefaultProvider(), timestamp]
-        );
-      } catch (error) {
-        // If provider column doesn't exist, insert without it
-        await pool.execute(
-          'INSERT INTO chat_messages (id, chat_id, content, role, timestamp) VALUES (?, ?, ?, ?, ?)',
-          [messageId, body.chatId, body.content, body.role, timestamp]
-        );
-      }
-      
-      // Update chat timestamp
-      await pool.execute(
-        'UPDATE chats SET timestamp = ? WHERE id = ?',
-        [timestamp, body.chatId]
-      );
-      
-      // Get updated chat
-      const [updatedChats] = await pool.execute(
-        'SELECT id, name, timestamp FROM chats WHERE id = ?',
-        [body.chatId]
-      );
-      
-      const updatedChat = (updatedChats as any)[0];
-      
-      const newMessage = {
-        id: messageId,
-        content: body.content,
-        role: body.role as 'user' | 'assistant',
-        provider: body.provider || await getDefaultProvider(),
-        timestamp: timestamp
-      };
-      
-      console.log('Adding message to chat:', updatedChat.name);
-      console.log('Message role:', body.role);
-      console.log('Saving message to database');
-      
-      return NextResponse.json({ 
-        message: newMessage, 
-        chat: {
-          id: updatedChat.id,
-          name: updatedChat.name,
-          timestamp: updatedChat.timestamp.toISOString(),
-          messages: [] // Messages will be loaded separately if needed
-        } 
-      }, { status: 200 });
-    } else if (body.action === 'deleteAll') {
-      // Delete all chats (messages will be deleted automatically via cascade)
-      await pool.execute('DELETE FROM chats');
-      
-      console.log('Deleted all chats from database');
-      
-      return NextResponse.json({ success: true }, { status: 200 });
     }
-    
-    return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
+
+    // Get response from AI API
+    const response = await getAIResponse(messages, apiProvider, apiKey);
+
+    return NextResponse.json(
+      { success: true, response },
+      { status: 200 }
+    );
   } catch (error) {
-    console.error('Error processing chat request:', error);
-    return NextResponse.json({ error: 'Failed to process chat request' }, { status: 500 });
+    console.error('Error in chat API:', error);
+    if ((error as Error).message === 'No AI connections found for this user') {
+      return NextResponse.json(
+        { error: 'No AI connections found. Please set up your AI connections in account settings.' },
+        { status: 400 }
+      );
+    }
+    return NextResponse.json(
+      { error: (error as Error).message || 'Internal server error' },
+      { status: 500 }
+    );
   }
 }

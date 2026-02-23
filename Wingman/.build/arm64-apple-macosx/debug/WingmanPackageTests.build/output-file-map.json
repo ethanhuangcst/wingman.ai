@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/master.swiftdeps"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner.dia"
+  }
+}
