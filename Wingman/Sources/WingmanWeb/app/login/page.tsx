@@ -25,6 +25,7 @@ export default function LoginPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [messageType, setMessageType] = useState<'success' | 'error' | null>(null);
+  const [showPassword, setShowPassword] = useState(false);
 
   const validateForm = (): boolean => {
     const newErrors: ValidationErrors = {};
@@ -64,6 +65,8 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
+    console.log('handleSubmit called');
+    
     if (!validateForm()) {
       return;
     }
@@ -73,7 +76,11 @@ export default function LoginPage() {
     setMessageType(null);
     
     try {
-      const response = await axios.post('/api/login', formData);
+      const response = await axios.post('/api/login', formData, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
       
       if (response.data.success) {
         // Store API test result in localStorage
@@ -142,15 +149,29 @@ export default function LoginPage() {
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
               Password <span className="text-red-500">*</span>
             </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              value={formData.password}
-              onChange={handleInputChange}
-              className={`w-full px-4 py-3 border ${errors.password ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900`}
-              placeholder="Enter your password"
-            />
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                className={`w-full px-4 py-3 pr-12 border ${errors.password ? 'border-red-500' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900`}
+                placeholder="Enter your password"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                aria-label={showPassword ? "Hide password" : "Show password"}
+              >
+                <img
+                  src={showPassword ? "/Resources/hidden.svg" : "/Resources/show.svg"}
+                  alt={showPassword ? "Hide password" : "Show password"}
+                  className="h-5 w-5 text-gray-500 hover:text-gray-700"
+                />
+              </button>
+            </div>
             {errors.password && <p className="mt-1 text-sm text-red-600">{errors.password}</p>}
           </div>
 

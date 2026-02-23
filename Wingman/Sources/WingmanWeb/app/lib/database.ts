@@ -8,13 +8,15 @@ const dbConfig = {
   password: 'Z8#kP2@vQ7$mE5!tR3&wX9*yB4',
   database: 'wingman_db',
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit: 5, // Reduced to prevent overload
   queueLimit: 0,
-  connectTimeout: 10000, // 10 seconds timeout
-  acquireTimeout: 15000, // 15 seconds to acquire connection
-  timeout: 30000, // 30 seconds idle timeout
+  connectTimeout: 3000, // Shorter timeout
+  acquireTimeout: 3000, // Shorter acquire timeout
+  timeout: 3000, // Shorter overall timeout
   charset: 'utf8mb4',
-  multipleStatements: false
+  multipleStatements: false,
+  enableKeepAlive: true,
+  keepAliveInitialDelay: 30000
 };
 
 // Create database connection pool
@@ -48,23 +50,29 @@ export class DatabaseManager {
 
   // Execute a query with connection management
   public async execute<T = any>(query: string, params?: any[]): Promise<T[]> {
-    const connection = await this.getConnection();
+    let connection;
     try {
+      connection = await this.getConnection();
       const [results] = await connection.execute(query, params);
       return results as T[];
     } finally {
-      connection.release();
+      if (connection) {
+        connection.release();
+      }
     }
   }
 
   // Execute a query and return the raw result (for UPDATE/INSERT/DELETE queries)
   public async executeRaw(query: string, params?: any[]): Promise<any> {
-    const connection = await this.getConnection();
+    let connection;
     try {
+      connection = await this.getConnection();
       const result = await connection.execute(query, params);
       return result;
     } finally {
-      connection.release();
+      if (connection) {
+        connection.release();
+      }
     }
   }
 

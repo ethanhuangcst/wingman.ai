@@ -7,7 +7,34 @@
     }
   ],
   "copyCommands" : {
-
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Resources/icon.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon.png"
+        }
+      ]
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon_offline.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Resources/icon_offline.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon_offline.png"
+        }
+      ]
+    }
   },
   "explicitTargetDependencyImportCheckingMode" : {
     "none" : {
@@ -237,7 +264,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<WingmanCore-arm64-apple-macosx26.0-debug.module-resources>"
         },
         {
           "kind" : "file",
@@ -251,7 +286,8 @@
         "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.swift.o",
         "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.swift.o",
         "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.swift.o",
-        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o"
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -266,7 +302,7 @@
         "-j8",
         "-DSWIFT_PACKAGE",
         "-DDEBUG",
-        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
         "-module-cache-path",
         "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
@@ -317,6 +353,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCore.swiftmodule"
         }
       ],
@@ -325,7 +365,8 @@
         "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/Config.swift",
         "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/ConnectivityService.swift",
         "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/MenuBarService.swift",
-        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift"
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build",
       "wholeModuleOptimization" : false
@@ -989,6 +1030,7 @@
       "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/ConnectivityService.swift",
       "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/MenuBarService.swift",
       "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -1003,7 +1045,7 @@
       "-j8",
       "-DSWIFT_PACKAGE",
       "-DDEBUG",
-      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
       "-module-cache-path",
       "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
@@ -1385,6 +1427,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/SettingsWindow.swift.o"
         },
         {
@@ -1438,6 +1484,10 @@
         {
           "kind" : "file",
           "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift"
         }
       ],
       "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/sources"
@@ -1532,6 +1582,10 @@
         {
           "kind" : "file",
           "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
         },
         {
           "kind" : "file",

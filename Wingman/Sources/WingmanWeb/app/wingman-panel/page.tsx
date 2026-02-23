@@ -101,16 +101,16 @@ export default function WingmanPanel() {
   const testAIConnection = async (user: User) => {
     console.log('Starting AI connection test...');
     if (!user.aiConnections || user.aiConnections.length === 0) {
-      console.log('No AI connections configured, skipping test');
+      console.log('No AI connections configured, showing setup prompt');
       setApiTest({
         isTesting: false,
-        testResult: 'PASS',
-        testError: null
+        testResult: 'FAIL',
+        testError: 'No AI connections configured'
       });
       // Store result in localStorage
       localStorage.setItem('apiTestResult', JSON.stringify({
-        testResult: 'PASS',
-        testError: null
+        testResult: 'FAIL',
+        testError: 'No AI connections configured'
       }));
       // Clear firstLoadAfterLogin flag
       localStorage.removeItem('firstLoadAfterLogin');
@@ -386,6 +386,8 @@ export default function WingmanPanel() {
   // API test failed
   if (apiTest.testResult === 'FAIL') {
     console.log('Rendering API test failed state');
+    const isNoConnections = apiTest.testError === 'No AI connections configured';
+    
     return (
       <div className="page-container bg-gray-100 flex items-center justify-center p-4">
         <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8 text-center">
@@ -393,9 +395,14 @@ export default function WingmanPanel() {
             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-red-500 text-2xl">❌</span>
             </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Cannot connect to AI provider</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              {isNoConnections ? 'No AI connections configured' : 'Cannot connect to AI provider'}
+            </h2>
             <p className="text-gray-600 mb-6">
-              Please check your API Key and provider settings in
+              {isNoConnections 
+                ? 'Please set up your AI connections in'
+                : 'Please check your API Key and provider settings in'
+              }
               <a 
                 href="/settings" 
                 className="text-blue-600 font-medium ml-1 hover:underline"

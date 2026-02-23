@@ -12,6 +12,8 @@ export default function IconsPage() {
     { name: 'icon_upload.gif', alt: 'Upload Icon (GIF)' },
     { name: 'icon_upload.png', alt: 'Upload Icon (PNG)' },
     { name: 'comment-1-share.svg', alt: 'Share Icon (SVG)' },
+    { name: 'show.svg', alt: 'Show Password Icon (SVG)' },
+    { name: 'hidden.svg', alt: 'Hide Password Icon (SVG)' },
   ];
 
   // Create test data: test text #1 - test text #15

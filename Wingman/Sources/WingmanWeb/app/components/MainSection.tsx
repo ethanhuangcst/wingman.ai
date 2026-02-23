@@ -1235,6 +1235,9 @@ export default function MainSection({ provider = 'AI' }: MainSectionProps) {
                     }}
                     className="w-full h-[120px] px-[6px] pt-[2px] pb-1 resize-none border-0 rounded-lg focus:outline-none"
                   />
+                  <div className="absolute bottom-2 left-2 text-xs text-gray-400">
+                    command+enter to send message
+                  </div>
                   <div className="absolute bottom-2 right-2 flex items-center gap-2">
                     {/* AI Provider Dropdown */}
                     <div className="relative">

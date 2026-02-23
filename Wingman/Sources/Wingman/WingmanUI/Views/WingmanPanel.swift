@@ -184,7 +184,7 @@ public struct WingmanPanelConfig {
                 p.delegate = self
                 p.backgroundColor = .clear
                 p.isOpaque = false
-                p.hasShadow = false
+                p.hasShadow = true
                 p.contentView = contentView
                 
                 // Configure content view for transparency
@@ -204,7 +204,7 @@ public struct WingmanPanelConfig {
                 panel?.setContentSize(size)
                 panel?.backgroundColor = .clear
                 panel?.isOpaque = false
-                panel?.hasShadow = false
+                panel?.hasShadow = true
                 panel?.contentView = contentView
                 
                 // Configure content view for transparency

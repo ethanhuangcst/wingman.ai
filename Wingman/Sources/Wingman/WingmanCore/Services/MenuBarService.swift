@@ -158,12 +158,59 @@ public class MenuBarService {
         
         if let button = statusItem.button {
             // Determine which icon to use based on current mode
-            let iconPath: String
+            let iconName: String
             switch currentMode {
             case .online:
-                iconPath = "/Users/ethanhuang/Documents/Ethan's Workspace/code/trae/Wingman.ai/Wingman/Resources/icon.png"
+                iconName = "icon"
             case .offline:
-                iconPath = "/Users/ethanhuang/Documents/Ethan's Workspace/code/trae/Wingman.ai/Wingman/Resources/icon_offline.png"
+                iconName = "icon_offline"
+            }
+            
+            // Get icon path from bundle
+            var iconPath: String?
+            
+            // Try to find in main bundle
+            iconPath = Bundle.main.path(forResource: iconName, ofType: "png")
+            
+            // Try to find in Resources folder at the same level as executable
+            if iconPath == nil {
+                let executablePath = Bundle.main.executablePath ?? ""
+                let resourcesPath = URL(fileURLWithPath: executablePath)
+                    .deletingLastPathComponent()
+                    .appendingPathComponent("Resources")
+                    .appendingPathComponent("\(iconName).png")
+                if FileManager.default.fileExists(atPath: resourcesPath.path) {
+                    iconPath = resourcesPath.path
+                }
+            }
+            
+            // Try to find in project root Resources folder
+            if iconPath == nil {
+                let rootPath = URL(fileURLWithPath: Bundle.main.bundlePath)
+                    .deletingLastPathComponent()
+                    .deletingLastPathComponent()
+                    .deletingLastPathComponent()
+                    .appendingPathComponent("Resources")
+                    .appendingPathComponent("\(iconName).png")
+                if FileManager.default.fileExists(atPath: rootPath.path) {
+                    iconPath = rootPath.path
+                }
+            }
+            
+            // Try to find in the actual Resources folder location
+            if iconPath == nil {
+                let actualPath = URL(fileURLWithPath: "/Users/ethanhuang/code/Wingman.ai/Wingman/Resources/")
+                    .appendingPathComponent("\(iconName).png")
+                if FileManager.default.fileExists(atPath: actualPath.path) {
+                    iconPath = actualPath.path
+                }
+            }
+            
+            guard let iconPath = iconPath else {
+                print("Error: Could not find icon \(iconName).png in any location")
+                print("Bundle path: \(Bundle.main.bundlePath)")
+                print("Executable path: \(Bundle.main.executablePath ?? "unknown")")
+                return
             }
             print("Attempting to load icon from path: \(iconPath)")
             

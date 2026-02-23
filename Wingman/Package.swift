@@ -25,7 +25,10 @@ let package = Package(
         .target(
             name: "WingmanCore",
             dependencies: [],
-            path: "Sources/Wingman/WingmanCore"
+            path: "Sources/Wingman/WingmanCore",
+            resources: [
+                .process("Resources")
+            ]
         ),
         .target(
             name: "WingmanUI",
