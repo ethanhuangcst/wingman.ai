@@ -39,10 +39,10 @@ export async function POST(request: NextRequest) {
     // Hash password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Insert user
+    // Insert user with system_flag = 'WINGMAN'
     const result = await db.execute(
-      'INSERT INTO users (name, email, password, created_at) VALUES (?, ?, ?, NOW())',
-      [name, email, hashedPassword]
+      'INSERT INTO users (name, email, password, system_flag, created_at) VALUES (?, ?, ?, ?, NOW())',
+      [name, email, hashedPassword, 'WINGMAN']
     );
 
     return NextResponse.json({

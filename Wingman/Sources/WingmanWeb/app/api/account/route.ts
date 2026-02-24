@@ -280,13 +280,13 @@ export async function PUT(request: NextRequest) {
       if (profileImagePath !== null) {
         // Update with password and profile image
         result = await db.executeRaw(
-          'UPDATE users SET name = ?, email = ?, password = ?, profileImage = ? WHERE id = ?',
+          'UPDATE users SET name = ?, email = ?, password = ?, profileImage = ?, system_flag = "WINGMAN" WHERE id = ?',
           [name.trim(), email, hashedPassword, profileImagePath, userId]
         );
       } else {
         // Update with password but without changing profile image
         result = await db.executeRaw(
-          'UPDATE users SET name = ?, email = ?, password = ? WHERE id = ?',
+          'UPDATE users SET name = ?, email = ?, password = ?, system_flag = "WINGMAN" WHERE id = ?',
           [name.trim(), email, hashedPassword, userId]
         );
       }
@@ -294,13 +294,13 @@ export async function PUT(request: NextRequest) {
       if (profileImagePath !== null) {
         // Update with profile image but without changing password
         result = await db.executeRaw(
-          'UPDATE users SET name = ?, email = ?, profileImage = ? WHERE id = ?',
+          'UPDATE users SET name = ?, email = ?, profileImage = ?, system_flag = "WINGMAN" WHERE id = ?',
           [name.trim(), email, profileImagePath, userId]
         );
       } else {
         // Update without changing password or profile image
         result = await db.executeRaw(
-          'UPDATE users SET name = ?, email = ? WHERE id = ?',
+          'UPDATE users SET name = ?, email = ?, system_flag = "WINGMAN" WHERE id = ?',
           [name.trim(), email, userId]
         );
       }
