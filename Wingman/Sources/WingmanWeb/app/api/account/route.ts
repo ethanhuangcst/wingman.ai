@@ -229,26 +229,10 @@ export async function PUT(request: NextRequest) {
         );
       }
 
-      // Create upload directory if it doesn't exist
-      const uploadDir = path.join(process.cwd(), 'public', 'uploads', 'profile-images');
-      await import('fs').then(fs => {
-        if (!fs.default.existsSync(uploadDir)) {
-          fs.default.mkdirSync(uploadDir, { recursive: true });
-        }
-      });
-
-      // Generate unique filename
-      const uniqueId = randomUUID();
-      const fileExtension = path.extname(profileImageFile.name);
-      const filename = `${uniqueId}${fileExtension}`;
-      const filePath = path.join(uploadDir, filename);
-
-      // Save file
+      // Convert image to base64 and store in database
       const buffer = Buffer.from(await profileImageFile.arrayBuffer());
-      await writeFile(filePath, buffer);
-
-      // Store relative path in database
-      profileImagePath = `/uploads/profile-images/${filename}`;
+      const base64Image = `data:${profileImageFile.type};base64,${buffer.toString('base64')}`;
+      profileImagePath = base64Image;
     }
 
     // Check if email is already in use by another user

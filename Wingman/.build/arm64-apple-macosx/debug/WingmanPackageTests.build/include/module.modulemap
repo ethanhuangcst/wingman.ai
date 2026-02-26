@@ -1,0 +1,3 @@
+module WingmanPackageTests {
+    header "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/include/WingmanPackageTests-Swift.h"
+}

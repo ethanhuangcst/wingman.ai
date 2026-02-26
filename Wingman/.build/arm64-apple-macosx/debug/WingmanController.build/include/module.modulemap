@@ -1,0 +1,3 @@
+module WingmanController {
+    header "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/include/WingmanController-Swift.h"
+}

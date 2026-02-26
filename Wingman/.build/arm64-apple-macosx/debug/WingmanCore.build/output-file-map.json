@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/master.swiftdeps"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/Config.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/ConnectivityService.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/MenuBarService.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.dia"
+  }
+}

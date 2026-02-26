@@ -1,0 +1,1748 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.xctest/Contents/MacOS/WingmanPackageTests",
+      "packagePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman",
+      "productName" : "WingmanPackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Resources/icon.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon.png"
+        }
+      ]
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon_offline.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Resources/icon_offline.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman_WingmanCore.bundle/icon_offline.png"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Wingman-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/sources",
+      "importPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/App/Wingman.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanController.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Wingman",
+      "moduleOutputPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/Wingman.swiftmodule",
+      "objects" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/Wingman.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Wingman_main",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wingman"
+      ],
+      "outputFileMapPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/Wingman.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/Wingman.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/App/Wingman.swift"
+      ],
+      "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.WingmanController-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/sources",
+      "importPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanController/Controllers/AppCoordinator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "WingmanController",
+      "moduleOutputPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanController.swiftmodule",
+      "objects" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/include/WingmanController-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wingman"
+      ],
+      "outputFileMapPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanController.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanController/Controllers/AppCoordinator.swift"
+      ],
+      "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.WingmanCore-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/sources",
+      "importPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/Config.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/ConnectivityService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/MenuBarService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<WingmanCore-arm64-apple-macosx26.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "WingmanCore",
+      "moduleOutputPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCore.swiftmodule",
+      "objects" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/include/WingmanCore-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wingman"
+      ],
+      "outputFileMapPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/Config.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/ConnectivityService.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/MenuBarService.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.WingmanCoreTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/sources",
+      "importPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/App/AppTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Controllers/AppCoordinatorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConfigTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConnectivityServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarAppModeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarConnectivityTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarContextMenuTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarDarkModeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarLeftClickTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/SettingsServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "WingmanCoreTests",
+      "moduleOutputPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCoreTests.swiftmodule",
+      "objects" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/AppTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/AppCoordinatorTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/ConfigTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/ConnectivityServiceTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarAppModeTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarConnectivityTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarContextMenuTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarDarkModeTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarLeftClickTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarServiceTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/SettingsServiceTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wingman"
+      ],
+      "outputFileMapPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/AppTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/AppCoordinatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/ConfigTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/ConnectivityServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarAppModeTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarConnectivityTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarContextMenuTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarDarkModeTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarLeftClickTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/SettingsServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCoreTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/App/AppTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Controllers/AppCoordinatorTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConfigTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConnectivityServiceTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarAppModeTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarConnectivityTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarContextMenuTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarDarkModeTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarLeftClickTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarServiceTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/SettingsServiceTests.swift"
+      ],
+      "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.WingmanPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/sources",
+      "importPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUITests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCoreTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "WingmanPackageTests",
+      "moduleOutputPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/include/WingmanPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wingman"
+      ],
+      "outputFileMapPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.WingmanUI-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/sources",
+      "importPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/SettingsWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WebViewWrapper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanKeyPanel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanPanel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "WingmanUI",
+      "moduleOutputPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUI.swiftmodule",
+      "objects" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/SettingsWindow.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WebViewWrapper.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanKeyPanel.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanPanel.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/include/WingmanUI-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wingman"
+      ],
+      "outputFileMapPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/SettingsWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WebViewWrapper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanKeyPanel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanPanel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/SettingsWindow.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WebViewWrapper.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanKeyPanel.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanPanel.swift"
+      ],
+      "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.WingmanUITests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/sources",
+      "importPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/MenuBarAppTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/SettingsWindowTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WebViewWrapperTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanKeyPanelTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanPanelTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "WingmanUITests",
+      "moduleOutputPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUITests.swiftmodule",
+      "objects" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests.swift.o",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wingman"
+      ],
+      "outputFileMapPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules/WingmanUITests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/MenuBarAppTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/SettingsWindowTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WebViewWrapperTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanKeyPanelTests.swift",
+        "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanPanelTests.swift"
+      ],
+      "tempsPath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Wingman" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Wingman",
+      "-package-name",
+      "wingman",
+      "-c",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/App/Wingman.swift",
+      "-I",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Wingman_main",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wingman",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "WingmanController" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "WingmanController",
+      "-package-name",
+      "wingman",
+      "-c",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanController/Controllers/AppCoordinator.swift",
+      "-I",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/include/WingmanController-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wingman",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "WingmanCore" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "WingmanCore",
+      "-package-name",
+      "wingman",
+      "-c",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/Config.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/ConnectivityService.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/MenuBarService.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/include/WingmanCore-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wingman",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "WingmanCoreTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "WingmanCoreTests",
+      "-package-name",
+      "wingman",
+      "-c",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/App/AppTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Controllers/AppCoordinatorTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConfigTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConnectivityServiceTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarAppModeTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarConnectivityTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarContextMenuTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarDarkModeTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarLeftClickTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarServiceTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/SettingsServiceTests.swift",
+      "-I",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wingman",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "WingmanPackageTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "WingmanPackageTests",
+      "-package-name",
+      "wingman",
+      "-c",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/include/WingmanPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wingman",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "WingmanUI" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "WingmanUI",
+      "-package-name",
+      "wingman",
+      "-c",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/SettingsWindow.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WebViewWrapper.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanKeyPanel.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanPanel.swift",
+      "-I",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/include/WingmanUI-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wingman",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "WingmanUITests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "WingmanUITests",
+      "-package-name",
+      "wingman",
+      "-c",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/MenuBarAppTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/SettingsWindowTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WebViewWrapperTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanKeyPanelTests.swift",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanPanelTests.swift",
+      "-I",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wingman",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Wingman" : [
+      "WingmanController",
+      "WingmanUI",
+      "WingmanCore"
+    ],
+    "WingmanController" : [
+      "WingmanUI",
+      "WingmanCore"
+    ],
+    "WingmanCore" : [
+
+    ],
+    "WingmanCoreTests" : [
+      "WingmanCore"
+    ],
+    "WingmanPackageTests" : [
+      "WingmanCoreTests",
+      "WingmanUITests",
+      "WingmanUI",
+      "WingmanCore"
+    ],
+    "WingmanUI" : [
+      "WingmanCore"
+    ],
+    "WingmanUITests" : [
+      "WingmanUI",
+      "WingmanCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman-entitlement.plist"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/App/Wingman.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/sources"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.build/Wingman.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/AppCoordinator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/SettingsWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WebViewWrapper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanKeyPanel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanPanel.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/Wingman.product/Objects.LinkFileList"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanController/Controllers/AppCoordinator.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanController.build/sources"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/Config.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/ConnectivityService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/MenuBarService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanCore/Services/SettingsService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/sources"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/App/AppTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Controllers/AppCoordinatorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConfigTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/ConnectivityServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarAppModeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarConnectivityTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarContextMenuTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarDarkModeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarLeftClickTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/MenuBarServiceTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanCoreTests/Services/SettingsServiceTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/sources"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/sources"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/ConnectivityService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/MenuBarService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/SettingsService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCore.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/AppCoordinatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/AppTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/ConfigTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/ConnectivityServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarAppModeTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarConnectivityTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarContextMenuTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarDarkModeTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarLeftClickTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/MenuBarServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanCoreTests.build/SettingsServiceTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/SettingsWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WebViewWrapper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanKeyPanel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/WingmanPanel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/SettingsWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WebViewWrapper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanKeyPanel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/WingmanUI/Views/WingmanPanel.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUI.build/sources"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/MenuBarAppTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/SettingsWindowTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WebViewWrapperTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanKeyPanelTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanPanelTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/sources"
+    },
+    "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/master.swiftdeps"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/MenuBarAppTests.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/MenuBarAppTests.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/SettingsWindowTests.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/SettingsWindowTests.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WebViewWrapperTests.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WebViewWrapperTests.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanKeyPanelTests.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanKeyPanelTests.dia"
+  },
+  "/Users/ethanhuang/code/Wingman.ai/Wingman/Sources/Wingman/Tests/WingmanUITests/Views/WingmanPanelTests.swift": {
+    "dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests.d",
+    "object": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests.swift.o",
+    "swiftmodule": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests.swiftdeps",
+    "diagnostics": "/Users/ethanhuang/code/Wingman.ai/Wingman/.build/arm64-apple-macosx/debug/WingmanUITests.build/WingmanPanelTests.dia"
+  }
+}
